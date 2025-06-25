@@ -36,7 +36,7 @@ python3 list2map384.py INPUT_CSV_FILENAME
 
 ## Assumptions
 - INPUT_CSV_FILENAME refers to a CSV file
-- Output is XLSX format and its name is derived from INPUT_CSV_FILENAME (```MAP__CSV_FILE_NAME```)
+- Output is templated on the included ```template.xlsx``` and its name is derived from INPUT_CSV_FILENAME (```MAP__CSV_FILE_NAME```)
 - INPUT_CSV_FILENAME contains exactly 385 lines
   - First line: labels
   - Subsequent lines: data
