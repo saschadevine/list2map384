@@ -18,14 +18,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
 ## Purpose
-Generate a 16x24 map (XLSX) from a list of 384 indices and associated identities (CSV)
+```list2map384.py``` generates a 16x24 map (XLSX) from a list of 384 indices and associated identities (CSV)
 
-## Usage
+## Example Applications
+- Generate a 384w plate map of compound stocks from a linear list of compound stocks outputted by compound management software (e.g., Mosaic)
+- Generate a 384w plate map of data from a linear list of readings outputted by a plate reader or qPCR instrument
+
+## Requirements
+```listmap384.py``` requires:
+- Python 3.10.12 or better
+- ```openpyxl```
+
+## Command Line Syntax
 ```
 python3 list2map384.py INPUT_CSV_FILENAME
 ```
 
-## Expectations
+## Assumptions
 - INPUT_CSV_FILENAME refers to a CSV file
 - Output is XLSX format and its name is derived from INPUT_CSV_FILENAME (```MAP__CSV_FILE_NAME```)
 - INPUT_CSV_FILENAME contains exactly 385 lines
