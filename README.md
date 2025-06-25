@@ -1,4 +1,23 @@
-# list2map384
+# list2map384.py
+# SLD 2025
+
+## License
+```
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
+## Purpose
 Generate a 16x24 map (XLSX) from a list of 384 indices and associated identities (CSV)
 
 ## Usage
@@ -9,11 +28,11 @@ python3 list2map384.py INPUT_CSV_FILENAME
 ## Expectations
 - INPUT_CSV_FILENAME refers to a CSV file
 - Output is XLSX format and its name is derived from INPUT_CSV_FILENAME (```MAP__CSV_FILE_NAME```)
-- INPUT_CSV_FILENAME contains 385 lines
+- INPUT_CSV_FILENAME contains exactly 385 lines
   - First line: labels
   - Subsequent lines: data
+  - All data is associated with one map ID
 - Each line of INPUT_CSV_FILENAME contains the following (at minimum):
-  - Value of cell in output  (by default, ```CompoundBatch```)
-  - Plate ID (by default, ```Plate Barcode```)
-  - Well ID (by default, ```Position```)
-- 
+  - Map ID (by default, ```Plate Barcode```)
+  - Map cell index (by default, ```Position```)
+  - Map cell value  (by default, ```CompoundBatch```) 
