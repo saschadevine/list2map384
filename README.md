@@ -44,4 +44,5 @@ python3 list2map384.py INPUT_CSV_FILENAME
 - Each line of INPUT_CSV_FILENAME contains the following (at minimum):
   - Map ID (by default, ```Plate Barcode```)
   - Map cell index (by default, ```Position```)
-  - Map cell value  (by default, ```CompoundBatch```) 
+  - Map cell value  (by default, ```CompoundBatch```)
+  - For alternative cell values, visit and edit the script appropriately
